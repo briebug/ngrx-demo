@@ -1,7 +1,6 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
-import { Observable } from 'rxjs';
 import { select, Store } from '@ngrx/store';
 import {
   tap,
@@ -12,15 +11,15 @@ import {
   combineLatest
 } from 'rxjs/operators';
 
-import { getLoading, getSelectedBriebug, getError } from '@state/briebug';
-import { Briebug } from '@state/briebug/briebug.model';
+import { getLoading, getSelectedBriebug, getError } from '../../../state/briebug';
+import { Briebug } from '../../../state/briebug/briebug.model';
 import {
   LoadBriebugById,
   InsertBriebug,
   UpdateBriebug,
   SelectBriebugById
-} from '@state/briebug/briebug.actions';
-import { BriebugState } from '@state/briebug/briebug.reducer';
+} from '../../../state/briebug/briebug.actions';
+import { BriebugState } from '../../../state/briebug/briebug.reducer';
 
 @Component({
   templateUrl: './entity.component.html',

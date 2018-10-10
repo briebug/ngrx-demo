@@ -8,13 +8,12 @@ import {
   getAllBriebugEntitiesAsArray,
   getLoading,
   getError
-} from '@state/briebug';
-import { BriebugState } from '@state/briebug/briebug.reducer';
+} from '../../../state/briebug';
+import { BriebugState } from '../../../state/briebug/briebug.reducer';
 import {
   SearchAllBriebugEntities,
   DeleteBriebugById
-} from '@state/briebug/briebug.actions';
-import { Briebug } from '@state/briebug/briebug.model';
+} from '../../../state/briebug/briebug.actions';
 
 @Component({
   templateUrl: './entity-list.component.html',

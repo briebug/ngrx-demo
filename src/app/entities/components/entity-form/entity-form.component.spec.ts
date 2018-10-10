@@ -3,8 +3,7 @@ import { SimpleChange } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { BriebugFormComponent } from './entity-form.component';
-import { generateBriebug } from '@state/briebug/briebug.model';
-import { fromEvent } from 'rxjs';
+import { generateBriebug } from '../../../state/briebug/briebug.model';
 
 describe('BreibugFormComponent', () => {
   let component: BriebugFormComponent;
